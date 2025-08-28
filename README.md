@@ -208,12 +208,12 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 ```
 
-### Environment Variables (Optional)
-Create `.env` file for custom settings:
-```env
-DATABASE_URL=mysql+pymysql://username:password@localhost:3306/mystocktrading
-SECRET_KEY=your-secret-key
-FLASK_ENV=development
+### Custom Configuration (Optional)
+To customize database settings, edit `config.py`:
+```python
+# For different MySQL credentials, update these values:
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://username:password@localhost:3306/mystocktrading'
+SECRET_KEY = 'your-custom-secret-key'
 ```
 
 ## Troubleshooting

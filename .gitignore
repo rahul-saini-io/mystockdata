@@ -101,8 +101,11 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+# Claude Code settings (development only)  
+.claude/
+
 # Environments
-.env
+# .env (not used in this project)
 .venv
 env/
 venv/
