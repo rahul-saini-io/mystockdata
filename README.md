@@ -122,7 +122,8 @@ mystockdata/
 ├── config.py                    # Configuration settings
 ├── requirements.txt             # Python dependencies
 ├── app.py                       # Application entry point
-├── run.bat                      # Windows batch file to start app
+├── run.bat                      # Windows startup script (double-click to run)
+├── run.sh                       # Mac/Linux startup script (./run.sh)
 ├── sample_transactions.csv      # Sample CSV for testing bulk import
 └── README.md                    # This file
 ```

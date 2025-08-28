@@ -2,16 +2,24 @@
 
 This guide focuses on setting up the application for **local development and personal use only**. No production deployment instructions are included.
 
-## 🚀 Quick Start (Windows)
+## 🚀 Quick Start
 
-### Option 1: Automated Setup
+### Windows (Automated Setup)
 1. **Double-click `run.bat`** - This will automatically:
+   - Check Python installation
    - Create virtual environment
    - Install dependencies  
+   - Check MySQL connection
    - Start the application
 2. **Open browser** to `http://localhost:5000`
 
-### Option 2: Manual Setup
+### Mac/Linux (Automated Setup)
+1. **Open Terminal** and navigate to project folder
+2. **Run the script**: `./run.sh`
+   - If permission denied: `chmod +x run.sh && ./run.sh`
+3. **Open browser** to `http://localhost:5000`
+
+### Manual Setup
 Follow the detailed instructions below for more control.
 
 ## 📋 Prerequisites
@@ -123,7 +131,8 @@ mystockdata/
 ├── config.py                        # Configuration settings
 ├── requirements.txt                 # Python dependencies
 ├── app.py                           # Application entry point
-├── run.bat                          # Windows startup script
+├── run.bat                          # Windows startup script (double-click to run)
+├── run.sh                           # Mac/Linux startup script (./run.sh)
 ├── sample_transactions.csv          # Sample data for bulk import
 ├── README.md                        # Full documentation
 └── SETUP.md                         # This file
